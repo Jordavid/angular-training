@@ -1,11 +1,11 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
 import { BlogPost } from '../blog-post';
 import { TruncatePipe } from '../truncate.pipe';
 
 @Component({
   selector: 'app-blog-tile',
   templateUrl: './blog-tile.component.html',
-  styleUrls: ['./blog-tile.component.css']
+  styleUrls: ['./blog-tile.component.css'],
 })
 export class BlogTileComponent implements OnInit {
 

@@ -1,7 +1,9 @@
 <a class="button is-dark expand-btn"
   (click)="expandAll()"
 >Expand All</a>
-
+<a class="button is-danger expand-btn"
+  (click)="toggleFavorite()"
+>{{ fovoriteText }}</a>
 <app-blog-tile
   #tile
   *ngFor="let post of blogPost[currentPage]"
