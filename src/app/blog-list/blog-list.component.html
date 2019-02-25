@@ -1,4 +1,9 @@
+<a class="button is-dark expand-btn"
+  (click)="expandAll()"
+>Expand All</a>
+
 <app-blog-tile
+  #tile
   *ngFor="let post of blogPost[currentPage]"
   [post]="post">
 </app-blog-tile>

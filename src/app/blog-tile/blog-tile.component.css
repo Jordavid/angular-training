@@ -1,6 +1,4 @@
 .container{
-    display: inline-block;
-    width: 500px;
-    position: relative;
-    left: 170px;
+    display: block;
+    width: 700px;
 }

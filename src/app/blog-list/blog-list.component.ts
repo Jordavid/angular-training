@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, QueryList, ViewChildren } from '@angular/core';
 import { BlogPost } from '../blog-post';
+import { BlogTileComponent } from '../blog-tile/blog-tile.component';
 
 @Component({
   selector: 'app-blog-list',
@@ -10,6 +11,7 @@ export class BlogListComponent implements OnInit {
 
   blogPost: BlogPost[][];
   currentPage: number;
+  @ViewChildren('tile') blogTileComponents: QueryList<BlogTileComponent>;
 
   constructor() { }
 
@@ -79,6 +81,12 @@ export class BlogListComponent implements OnInit {
 
   updatePage(newPage:number){
     this.currentPage = newPage;
+  }
+
+  expandAll(){
+    this.blogTileComponents.forEach( component => {
+      component.expandSummary()
+    });
   }
 
 }
