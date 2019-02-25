@@ -1,0 +1,24 @@
+.navbar-item{
+    color: whitesmoke;
+}
+
+.navbar{
+    padding: 20px;
+    background: rgba(15, 1, 1, 0.8);
+}
+
+.form-inputs{
+    border: 2px solid brown; 
+    border-radius: 5px; 
+    padding: 25px; 
+    background: rgba(62, 119, 121, 0.473);
+}
+
+label{
+    color: tomato;
+}
+
+.is-large:hover{
+    background: red;
+    color: black;
+}

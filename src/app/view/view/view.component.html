@@ -1,0 +1,36 @@
+<div class="field is-grouped">
+    <div class="control">
+      <button class="button is-primary" (click)="toggleModal()">Search</button>
+    </div>
+</div>
+
+<div class="modal {{className}}">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+            <div class="field">
+                    <label class="label has-text-info" for="username">Username</label>
+                    <div class="control">
+                      <input class="input" type="text" placeholder="Username" id="username" [(ngModel)]="username">
+                    </div>
+            </div>
+            <div class="field is-grouped">
+                    <div class="control">
+                      <button class="button is-primary" (click)="search()">Search</button>
+                    </div>
+                </div>
+                <div class="field" *ngIf="username!=''">
+                    <div class="notification is-info">
+                        <p class="text">{{ username }}</p>
+                    </div>    
+                </div>
+                <div class="field" *ngIf="response">
+                    <div class="notification is-warning">
+                        <p>Login name: {{response.login}}</p>
+                        <p>Bio: {{response.bio}}</p>
+                        <p>Repos: {{response.public_repos}}</p>
+                        <p>Join on: {{response.created_at}}</p>
+                    </div>      
+                </div>
+    </div>
+    <button class="modal-close is-large" (click)="toggleModal()" aria-label="close"></button>
+</div>

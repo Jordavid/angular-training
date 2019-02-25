@@ -1,0 +1,31 @@
+h1, h2, h3, h4, h5, h6{
+    font-weight: bold;
+    
+}
+button{
+    border: none;
+}
+.address-card {
+    border: 2px solid brown;
+    padding: 15px;
+    display: inline-block;
+    background: cadetblue;
+    color: whitesmoke;
+}
+
+.name {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.position{
+    font-style: italic;
+}
+
+.address{
+    font-size: 15px;
+}
+
+.phone{
+    border-left: 1px brown solid;
+    padding: 5px;
+}

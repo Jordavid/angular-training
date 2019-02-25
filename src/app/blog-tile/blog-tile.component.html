@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="card">
+    <header class="card-header modal-card-head">
+      <p class="card-header-title is-centered modal-card-title">
+        {{post.title}}
+      </p>
+    </header>
+    <div class="card-content">
+      <div class="content">
+        <p class="has-text-justified" (click)="expandSummary()">{{ post.summary }}</p>
+      </div>
+    </div>
+    <footer class="card-footer">
+      <a routerLink="/search" class="card-footer-item button is-link">Read</a>
+    </footer>
+  </div>
+</div>
