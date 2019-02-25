@@ -1,4 +1,46 @@
 .container{
     display: block;
     width: 700px;
+    height: auto;
+    background: lightgray;
+    border-radius: 5px;
+    padding: 25px;
+    margin: 5px auto;
+}
+.card{
+    background: lightblue;
+}
+.fav-icon{
+    padding-top: 3px; 
+    font-size: 20px;
+}
+
+.is-fav-title{
+    background: lightyellow;
+}
+
+.fav{
+    background: lightskyblue;
+}
+
+.is-fav-icon{
+    color: red;
+    padding-top: 3px; 
+    font-size: 20px;
+}
+
+.is-fav-btn:hover .is-fav-icon{
+    color: rebeccapurple; 
+}
+
+.is-fav-btn {
+    background: rebeccapurple;
+}
+
+.is-fav-btn:hover {
+    background: red;
+}
+
+.card-header-title{
+    padding: 0px;
 }

@@ -1,6 +1,6 @@
 <nav class="pagination is-rounded" role="navigation" aria-label="pagination">
     <ul class="pagination-list">
-      <li><a class="pagination-link {{isCurrent}}" aria-label="Goto page 1" aria-current="page"
+      <li><a class="pagination-link" [ngClass]="{'is-current': pageNum==i}" aria-label="Goto page 1" aria-current="page"
         *ngFor="let page of pages; index as i"
         (click)="pageNumberClicked(i)">{{ i + 1 }}</a></li>
     </ul>

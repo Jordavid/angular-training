@@ -1,6 +1,6 @@
-<div class="container">
+<div class="container" [ngClass]="{'fav': post.isFavorite}">
   <div class="card">
-    <header class="card-header modal-card-head">
+    <header class="card-header modal-card-head" [ngClass]="{'is-fav-title': post.isFavorite}">
       <p class="card-header-title is-centered modal-card-title">
         {{post.title}}
       </p>
@@ -12,6 +12,7 @@
     </div>
     <footer class="card-footer">
       <a (click)="expandSummary()" class="card-footer-item button is-link">Read</a>
+      <a (click)="toggleFavorite()" class="card-footer button is-danger" [ngClass]="{'is-fav-btn': post.isFavorite}"><i class="fa fa-heart fav-icon" [ngClass]="{'is-fav-icon': post.isFavorite}" aria-hidden="true"></i></a>
     </footer>
   </div>
 </div>

@@ -24,5 +24,9 @@ export class BlogTileComponent implements OnInit {
     this.post.summary = this.fullSummary;
   }
 
+  toggleFavorite(){
+    this.post.isFavorite = !this.post.isFavorite;
+  }
+
 
 }
