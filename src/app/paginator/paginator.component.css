@@ -1,0 +1,23 @@
+.pagination{
+    background: rgba(0, 0, 0, 0.8);
+    margin-top: 25px;
+    text-align: center;
+    display: block;
+    padding: 20px;
+    
+}
+
+.pagination-link{
+    text-align: center;
+    position: relative;
+    left: 40vw;
+    color: whitesmoke;
+}
+.pagination-link:hover{
+    background: cadetblue;
+    color: wheat;
+}
+
+.is-current{
+    background: cadetblue;
+}

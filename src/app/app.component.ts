@@ -24,7 +24,7 @@ export class AppComponent {
       '01113681920', '01112547820'
     ];
 
-    this.testService.print2Console("Cool Staff!");
+    // this.testService.print2Console("Cool Staff!");
   }
 
   ngOnInit(): void {

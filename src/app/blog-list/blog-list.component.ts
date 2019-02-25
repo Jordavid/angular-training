@@ -9,10 +9,14 @@ import { BlogPost } from '../blog-post';
 export class BlogListComponent implements OnInit {
 
   blogPost: BlogPost[][];
+  currentPage: number;
 
   constructor() { }
 
   ngOnInit() {
+    
+    this.currentPage = 0;
+
     this.blogPost = 
     [
       [
@@ -71,6 +75,10 @@ export class BlogListComponent implements OnInit {
       ]
     ]
 
+  }
+
+  updatePage(newPage:number){
+    this.currentPage = newPage;
   }
 
 }
